@@ -42,7 +42,7 @@ public class Snake {
 		Tail = tail;
 	}
 
-	//蛇吃食物
+	// 蛇吃食物
 	public Boolean eat(Food food) {
 		if (food.getX() == Head.getX() && food.getY() == Head.getY()) {
 			list.addLast(food);
@@ -56,7 +56,7 @@ public class Snake {
 		return score;
 	}
 
-	//判断蛇是否死亡
+	// 判断蛇是否死亡
 	public Boolean isDied() {
 		int x = Head.getX();
 		int y = Head.getY();
