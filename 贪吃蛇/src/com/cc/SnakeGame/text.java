@@ -6,12 +6,12 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 import javax.swing.Timer;
-
+//æ³¨é‡Šæµ‹è¯•
 public class text {
 	private Food food;
-	private Snake snake;//Éß¶ÔÏó
-	private Timer timer;//¶¨Ê±´¥·¢Æ÷£¬ÉßµÄÒÆ¶¯ËÙ¶È
-	private gameFrame frame;//ÓÎÏ·¿ò¼Ü£¬½«ÉßºÍÊ³Îï»æÖÆµ½¿ò¼ÜÉÏ
+	private Snake snake;//ï¿½ß¶ï¿½ï¿½ï¿½
+	private Timer timer;//ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½Æ¶ï¿½ï¿½Ù¶ï¿½
+	private gameFrame frame;//ï¿½ï¿½Ï·ï¿½ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ßºï¿½Ê³ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 	public static void main(String[] args) {
 		text t = new text();
@@ -32,7 +32,7 @@ public class text {
 	}
 
 	class timeListener implements ActionListener {
-		public void actionPerformed(ActionEvent event)// ÊµÏÖ½Ó¿ÚÖÐµÄ·½·¨£¨¶ÔÊÂ¼þµÄ´¦Àí·½·¨£©
+		public void actionPerformed(ActionEvent event)// Êµï¿½Ö½Ó¿ï¿½ï¿½ÐµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		{
 			snake.snakeMove();
 			if (snake.isDied()) {
