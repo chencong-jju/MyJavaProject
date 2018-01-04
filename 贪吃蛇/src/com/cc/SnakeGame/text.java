@@ -9,9 +9,9 @@ import javax.swing.Timer;
 //注释测试
 public class text {
 	private Food food;
-	private Snake snake;//�߶���
-	private Timer timer;//��ʱ���������ߵ��ƶ��ٶ�
-	private gameFrame frame;//��Ϸ��ܣ����ߺ�ʳ����Ƶ������
+	private Snake snake;//蛇对象
+	private Timer timer;//定时触发器，蛇的移动速度
+	private gameFrame frame;//游戏框架，将蛇和食物绘制到框架上
 
 	public static void main(String[] args) {
 		text t = new text();
@@ -32,7 +32,7 @@ public class text {
 	}
 
 	class timeListener implements ActionListener {
-		public void actionPerformed(ActionEvent event)// ʵ�ֽӿ��еķ��������¼��Ĵ�������
+		public void actionPerformed(ActionEvent event)// 实现接口中的方法（对事件的处理方法）
 		{
 			snake.snakeMove();
 			if (snake.isDied()) {

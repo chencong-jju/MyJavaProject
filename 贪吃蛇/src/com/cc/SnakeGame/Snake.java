@@ -42,7 +42,7 @@ public class Snake {
 		Tail = tail;
 	}
 
-	//Éß³ÔÊ³Îï
+	//è›‡åƒé£Ÿç‰©
 	public Boolean eat(Food food) {
 		if (food.getX() == Head.getX() && food.getY() == Head.getY()) {
 			list.addLast(food);
@@ -56,7 +56,7 @@ public class Snake {
 		return score;
 	}
 
-	//ÅĞ¶ÏÉßÊÇ·ñËÀÍö
+	//åˆ¤æ–­è›‡æ˜¯å¦æ­»äº¡
 	public Boolean isDied() {
 		int x = Head.getX();
 		int y = Head.getY();
