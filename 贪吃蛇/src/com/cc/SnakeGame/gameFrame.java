@@ -1,9 +1,6 @@
 package com.cc.SnakeGame;
 
 import java.awt.Color;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -11,10 +8,10 @@ public class gameFrame{
 	private JFrame frame;
 
 
-	private JButton button;//±ß¿ò°´Å¥
-	private JButton beginButton;//¿ªÊ¼°´Å¥
-	private JButton resetButton;//ÖØÖÃ°´Å¥
-	private JButton scoreButton;//¼Æ·Ö°å
+	private JButton button;//ï¿½ß¿ï¿½Å¥
+	private JButton beginButton;//ï¿½ï¿½Ê¼ï¿½ï¿½Å¥
+	private JButton resetButton;//ï¿½ï¿½ï¿½Ã°ï¿½Å¥
+	private JButton scoreButton;//ï¿½Æ·Ö°ï¿½
 
 	public JButton getBeginButton() {
 		return beginButton;
@@ -37,7 +34,7 @@ public class gameFrame{
 		resetButton.setBounds(500, 600, 100, 40);
 		scoreButton = new JButton();
 		scoreButton.setBounds(100, 600, 400, 40);
-		frame = new JFrame("Ì°³ÔÉß");
+		frame = new JFrame("Ì°ï¿½ï¿½ï¿½ï¿½");
 		frame.setLayout(null);
 		for (int i = 0; i < 60; i++) {
 			button = new JButton();
@@ -66,11 +63,11 @@ public class gameFrame{
 		frame.setSize(600 + 8 + 8, 600 + 30 + 8 + 40);
 		frame.setVisible(true);
 	}
-	//ÏÔÊ¾Ê³Îï
+	//ï¿½ï¿½Ê¾Ê³ï¿½ï¿½
 	public void showFood(Food food) {
 		frame.add(food);
 	}
-	//ÏÔÊ¾Éß 
+	//ï¿½ï¿½Ê¾ï¿½ï¿½ 
 	public void showSnake(Snake snake) {
 		for (int i = 0; i < snake.getList().size(); i++) {
 			frame.add(snake.getList().get(i));

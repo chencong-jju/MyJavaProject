@@ -4,6 +4,7 @@ import java.awt.Color;
 
 import javax.swing.JButton;
 
+@SuppressWarnings("serial")
 public class Food extends JButton {
 	private int x;
 	private int y;
@@ -54,7 +55,7 @@ public class Food extends JButton {
 	}
 
 	/**
-	 * ²úÉú1~58µÄËæ»úÊý
+	 * ï¿½ï¿½ï¿½ï¿½1~58ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	public int getRandom() {
 		int t;
