@@ -55,7 +55,7 @@ public class Food extends JButton {
 	}
 
 	/**
-	 * ����1~58�������
+	 * 产生1~58的随机数
 	 */
 	public int getRandom() {
 		int t;

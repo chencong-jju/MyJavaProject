@@ -6,7 +6,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
 import javax.swing.Timer;
-//注释测试
+
 public class text {
 	private Food food;
 	private Snake snake;//蛇对象
